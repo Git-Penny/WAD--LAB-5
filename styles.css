@@ -26,16 +26,16 @@ body {
 /* Header & Footer */
 header{
   text-align: center;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
   background: var(--header-footer-bg);
   color: var(--text-color);
   border-radius: 12px;
 }
 footer {
   text-align: center;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 5px;
+  margin-bottom: 2px;
   background: var(--header-footer-bg);
   color: var(--text-color);
   border-radius: 8px;
