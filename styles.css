@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Lavender & Sky Pastel Theme Variables */
+:root {
+  --background-color: #dde0f5;      /* lavender mist */
+  --card-background: #debdee67;       /* pale sky blue */
+  --text-color: #3b3c4f;            /* slate purple-gray */
+  --fun-fact-color: #4f525e;        /* muted gray-purple */
+  --border-color: #d6a4e2;          /* pastel blue border */
+  --header-footer-bg: #d8d1f4;      /* soft lilac */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px;
+}
+
+/* Header & Footer */
+header{
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: var(--header-footer-bg);
+  color: var(--text-color);
+  border-radius: 12px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: var(--header-footer-bg);
+  color: var(--text-color);
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Centered Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Grid */
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card Styling */
+.card {
+  background-color: var(--card-background);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Image */
+.card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
+
+/* Text Styling */
+.card h3 {
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.fun-fact {
+  color: var(--fun-fact-color);
+  font-style: italic;
+}
