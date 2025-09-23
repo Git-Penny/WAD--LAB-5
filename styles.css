@@ -7,12 +7,12 @@
 
 /* Lavender & Sky Pastel Theme Variables */
 :root {
-  --background-color: #dde0f5;      /* lavender mist */
-  --card-background: #debdee67;       /* pale sky blue */
-  --text-color: #3b3c4f;            /* slate purple-gray */
-  --fun-fact-color: #4f525e;        /* muted gray-purple */
-  --border-color: #d6a4e2;          /* pastel blue border */
-  --header-footer-bg: #d8d1f4;      /* soft lilac */
+  --background-color: #e5eaf5;
+  --card-background:#d8d1f4 ;
+  --fun-fact-color: #4f525e;
+  --text-color: rgb(55, 48, 48);
+  --border-color: #baa1e9;
+  --header-footer-bg: #d8d1f4;
 }
 
 /* Global Styles */
@@ -96,7 +96,7 @@ h1 {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 15px;
-  border: 3px solid white;
+  border: 3px solid var(--border-color);
 }
 
 /* Text Styling */
