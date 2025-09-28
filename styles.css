@@ -1,21 +1,18 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Lavender & Sky Pastel Theme Variables */
 :root {
-  --background-color: #e5eaf5;
-  --card-background:#d8d1f4 ;
-  --fun-fact-color: #4f525e;
-  --text-color: rgb(0, 0, 0);
-  --border-color: #baa1e9;
-  --header-footer-bg: #d8d1f4;
+  --background-color: #d3cccc;
+  --card-background:#292727 ;
+  --fun-fact-color: #9a9b9b;
+  --text-color: rgb(255, 254, 254);
+  --border-color: #ffffff;
+  --header-footer-bg: #292727;
 }
 
-/* Global Styles */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--background-color);
@@ -46,7 +43,7 @@ h1 {
   font-weight: 600;
 }
 
-/* Centered Card Grid */
+/*Card Grid */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
